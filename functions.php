@@ -36,4 +36,15 @@ function get_color_category() {
     return $custom_field;
 }
 
+
+    function get_categoria()
+    {
+        $categories = get_the_category();
+
+        if ( ! empty( $categories ) ) {
+            echo esc_html( $categories[0]->name );   
+        }
+    }
+
+    
 ?>
