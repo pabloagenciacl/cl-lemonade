@@ -51,3 +51,29 @@ Este tema simples foi criado usando o exemplo Jumbotron encontrado no site do Bo
   margin-right: 0;
   margin-left: 0; 
 }
+
+.cl-banner-thumbnail {
+    right: 4%;
+    top: 0;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    opacity: .1;
+    -webkit-opacity: .1;
+    -moz-opacity: .1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
