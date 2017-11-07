@@ -6,7 +6,7 @@
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-    <div class="jumbotron" style="background-color: <?php echo get_color_category();?>;">
+    <div class="cl-banner-post" style="background-color: <?php echo get_color_category();?>;">
             <div class="large-12 columns">
                 <h1><?php the_title(); ?></h1>
             </div>
