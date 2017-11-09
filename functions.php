@@ -7,10 +7,14 @@ function scripts_do_template() {
 
     wp_enqueue_script('jquery');
     wp_enqueue_script('bootstrap');
+
 }
 
 add_action('wp_enqueue_scripts', 'scripts_do_template');
 add_theme_support( 'post-thumbnails' );
+add_theme_support( 'custom-logo' );
+
+
 
 if (function_exists('register_sidebar')) {
     register_sidebar(array(
@@ -36,6 +40,15 @@ function get_color_category() {
     return $custom_field;
 }
 
+    
+    function logonav()
+    {
+        if ( function_exists( 'the_custom_logo' ) ) {
+            the_custom_logo();
+        }else{
+            get_bloginfo($show = 'name');
+        }
+    }
 
     function get_categoria()
     {
@@ -45,6 +58,22 @@ function get_color_category() {
             echo esc_html( $categories[0]->name );   
         }
     }
+
+    function themename_custom_logo_setup() {
+    $defaults = array(
+        'default-image'          => '',
+        'width'                  => 150,
+        'height'                 => 30,
+        'flex-height'            => false,
+        'flex-width'             => false,
+        'uploads'                => true,
+        'random-default'         => false,
+        'header-text'            => true,
+    );
+    add_theme_support( 'custom-logo', $defaults );
+    }
+    add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
+
 
     
 ?>

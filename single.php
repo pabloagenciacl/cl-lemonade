@@ -14,27 +14,41 @@
 
             <h4><?php get_categoria(); ?> </h4>
             <h2><?php the_title(); ?></h2>
+
             <div class="autor col-md-4">
                 <?php echo get_avatar( get_the_author_meta('user_email'), $size = '50', $default, $alt, array( 'class' => 'avt' ) ); ?>
-                <h3>Escrito por: <span class="neg"><?php the_author_meta( 'display_name'); ?></span><br><em><?php echo ucfirst(get_the_time('l, j \d\e F \d\e Y')); ?></em></h3>
+                <h3>Escrito por: <span class="negrito"><?php the_author_meta( 'display_name'); ?></span><br><em><?php echo ucfirst(get_the_time('l, j \d\e F \d\e Y')); ?></em></h3>
             </div>    
         </div>
     </section>
-    <section class="cta1">
-        <div class="col-md-6">
-            <h5>Junte-se a mais de 150.000 pessoas!</h5>
-            <h3>Entre para nossa lista e receba conteúdos exclusivos!</h3>
-        </div>
-        
-        
-        <form class="col-md-6 femail">
-            <div class="col-md-12">
-                <input id="tf-email-txt" class="tf-email" placeholder="&#xf003; Seu email" value="">
-                <input type="submit"  value="Cadastrar" class="bt-env">
+
+
+    <section class="cta1 container ">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12 ctat">
+                        <h5>Junte-se a mais de 150.000 pessoas!</h5>
+                        <h3>Entre para nossa lista e receba conteúdos exclusivos!</h3>
+                    </div>
+                </div>
             </div>
-        </form>
-        
+            <div class="col-md-6 ctaf">
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <form >
+                            <input id="tf-email-txt" class="tf-email" placeholder="&#xf003; Seu email" value="">
+                            <input type="submit"  value="Cadastrar" class="bt-env">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+
+
     <div class="entry-content col-md-12">
         <?php the_content(); ?>
     </div>

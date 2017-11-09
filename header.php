@@ -28,18 +28,17 @@
 
     <body>
 
-        <nav class="cl-navbar  navbar-fixed-top">
+        
+        
+        <nav class="cl-navbar  navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                        <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
                     </button>
-                    <a class="navbar-brand" href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
+                    <a id="#cl-logo" href="<?php echo site_url(); ?>"><?php logonav() ?></a>
                 </div>
-                <div id="navbar" class="navbar-collapse collapse">
+                <div id="navbar" class="navbar-collapse collapse" >
                     <ul class="nav navbar-nav">
                         <?php wp_list_pages(array('title_li' => '', 'exclude' => 4)); ?>
                     </ul>
