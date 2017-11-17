@@ -34,7 +34,7 @@
             <div class="container-nav_principal">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+                        <i class="fa fa-bars fa-lg" style="color: #fff;" aria-hidden="true"></i>
                     </button>
                     <a id="#cl-logo" href="<?php echo site_url(); ?>"><?php logonav() ?></a>
                 </div>

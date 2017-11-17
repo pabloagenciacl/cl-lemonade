@@ -2,7 +2,7 @@
 
 <section class="cl-banner-post col-md-12 bgazul ajuste">
 	<div class="cont-artigos">
-		<div class="col-md-6">
+		<div class="col-md-6 texto_banner">
 			<h4>Agencia Couve Limão</h4>
 			<h2>Tudo o que você precisa para alcançar o próximo nível</h2>	
 		</div>
@@ -47,7 +47,7 @@
 		$wp_query = new WP_Query(); $wp_query->query('posts_per_page=8' . '&paged='.$paged);
 
 		while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-			<div class="post col-md-3">
+			<div class="post col-md-3 scroll">
 
 				<img class="thumb-artigos" style="background-color: <?php echo get_color_category(); ?>;" src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
 
