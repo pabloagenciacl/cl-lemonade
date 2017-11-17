@@ -1,16 +1,12 @@
-<?php include "header_principal.php" ?>
+<?php get_header(); ?>
 
-<section class="cl-banner-post col-md-12 bgazul ajuste">
-	<div class="cont-artigos">
-		<div class="col-md-6">
-			<h4>Agencia Couve Limão</h4>
-			<h2>Tudo o que você precisa para alcançar o próximo nível</h2>	
-		</div>
-		<div class="col-md-6">
-			<img class="bghome" src="wp-content/themes/cl-lemonade/img/bghome.png">
-		</div>
+
+
+<section class="cl-banner-post col-md-12 bgazul">
+	<div class="cont-artigos col-md-12">
+		<h4>Artigos Memoráveis</h4>
+		<h2>Tudo o que você precisa para alcançar o próximo nível</h2>
 	</div>
-
 </section>
 
 <div class="cta1 container">
@@ -37,14 +33,16 @@
 	</div>
 </div>
 
+ <div class="categorias col-md-12">
+	<?php 
+	
 
-<section>
-</section>
-
+	get_categorias(); ?>
+</div> 
 <div class="posts col-md-3">
 	<?php 
 		$temp = $wp_query; $wp_query= null;
-		$wp_query = new WP_Query(); $wp_query->query('posts_per_page=8' . '&paged='.$paged);
+		$wp_query = new WP_Query(); $wp_query->query('posts_per_page=18' . '&paged='.$paged);
 
 		while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 			<div class="post col-md-3">
@@ -57,12 +55,20 @@
 				
 			</div>
 		<?php endwhile; ?>
-	<div class="col-md-12" align="center">
-			<nav id="nav-posts" >
-				<a href="#">Leia mais</a>
-			</nav>
-	</div>
 </div>
+<div class="col-md-12">
+
+	<article>
 
 
+		<?php if ($paged > 1) ?>
+
+		<nav id="nav-posts">
+			<?php echo paginate_links( $args ); ?>
+		</nav>
+
+		<?php wp_reset_postdata(); ?>
+
+	</article>
+</div>
 <?php get_footer(); ?>

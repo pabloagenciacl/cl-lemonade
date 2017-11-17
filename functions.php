@@ -25,6 +25,18 @@ if (function_exists('register_sidebar')) {
     ));
 }
 
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'header-menu' => __( 'Header Menu' ),
+      'footer-menu' => __( 'Footer Menu' )
+    )
+  );
+}
+add_action( 'init', 'register_my_menus' );
+
+
+
 function get_color_category() {
     // load all 'category' terms for the post
     $terms = get_the_terms( get_the_ID(), 'category');
@@ -40,26 +52,27 @@ function get_color_category() {
     return $custom_field;
 }
 
-    
-    function logonav()
-    {
-        if ( function_exists( 'the_custom_logo' ) ) {
-            the_custom_logo();
-        }else{
-            get_bloginfo($show = 'name');
-        }
+
+function logonav()
+{
+    if ( function_exists( 'the_custom_logo' ) ) {
+        the_custom_logo();
+    }else{
+        get_bloginfo($show = 'name');
+    }
+}
+
+function get_categoria()
+{
+    $categories = get_the_category();
+
+    if ( ! empty( $categories ) ) {
+        echo esc_html( $categories[0]->name );   
     }
 
-    function get_categoria()
-    {
-        $categories = get_the_category();
+}
 
-        if ( ! empty( $categories ) ) {
-            echo esc_html( $categories[0]->name );   
-        }
-    }
-
-    function themename_custom_logo_setup() {
+function themename_custom_logo_setup() {
     $defaults = array(
         'default-image'          => '',
         'width'                  => 150,
@@ -71,9 +84,37 @@ function get_color_category() {
         'header-text'            => true,
     );
     add_theme_support( 'custom-logo', $defaults );
+}
+add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
+
+function get_categorias()
+{
+    $categories = get_categories();
+    $output = '';
+    if($categories) {
+        $output = "<ul>";
+        foreach($categories as $category) {
+            $custom_field = '#FFFFFF';
+
+                $custom_field = get_field($category->name, 'cor_de_fundo');
+
+
+
+            $output .= '<li style="background-color:'.$custom_field.';">
+            <a href="'.get_category_link( $category->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $category->name ) ) . '">'.$category->cat_name.'</a></li>';
+        }
+        $output .= "</ul>";
     }
-    add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
+    echo $output;
+}
+
+function debug_to_console( $data ) {
+    $output = $data;
+    if ( is_array( $output ) )
+        $output = implode( ',', $output);
+
+    echo "<script>console.log( 'Debug Objects: " . $output . "' );</script>";
+}
 
 
-    
 ?>

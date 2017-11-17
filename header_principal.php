@@ -30,8 +30,8 @@
 
         
         
-        <nav class="cl-navbar  navbar-static-top transicao">
-            <div class="container-nav">
+        <nav class="cl-navbar_principal  navbar-static-top">
+            <div class="container-nav_principal">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                         <i class="fa fa-bars fa-lg" aria-hidden="true"></i>

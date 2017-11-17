@@ -2,7 +2,7 @@
 <div class="contato bgcontato">
     <div class="chamada-contato" align="center">
         <h1>Converse com a gente :)</h1>
-        <h3>Sempre que tiver uma crítica, sugestão ou quiser trocar <br>uma ideia, é só entrar em contato!</h3>
+        <h3>Sempre que tiver uma crítica, sugestão ou quiser trocar uma ideia, é só entrar em contato!</h3>
     </div>
     <div class="col-md-5 contato-d">
         <form class="cform">
