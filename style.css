@@ -571,6 +571,7 @@ transition: all 0.5s linear;
 
 @media(min-width: 768px){
 	.navbar-nav ul li{	display: inline;}
+	.navbar-nav ul li a{	padding-right: 10px;}
 	.navbar-nav ul{	float: right;	}
 	.navbar-collapse{ background: transparent; height: 70px !important;padding-top: 30px; margin-left: 5% !important; }
 	.navbar-collapse li a{ color: #fff;}
