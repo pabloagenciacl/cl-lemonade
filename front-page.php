@@ -1,6 +1,6 @@
 <?php include "header_principal.php" ?>
 
-<section class="cl-banner-post col-md-12 bgazul ajuste">
+<section class="cl-banner-home col-md-12 bgazul ajuste">
 	<div class="cont-artigos">
 		<div class="col-md-6 texto_banner">
 			<h4>Agencia Couve Limão</h4>

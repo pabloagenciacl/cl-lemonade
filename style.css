@@ -24,7 +24,17 @@ font-family: 'Roboto', sans-serif;
   	border:none;
   	z-index: 1;
 } 
-
+.cl-banner-home{
+	float: left;
+	width: 100%;
+	padding-top: 0;
+  	padding-bottom: 0;
+  	margin:0;
+  	color: inherit;
+  	background-color: #eee;
+  	border:none;
+  	z-index: 1;
+} 
 .container-nav{
 	padding: 0;
 	margin: 0;
@@ -518,6 +528,7 @@ transition: all 0.5s linear;
 	.cta1{ padding-left: 10%; padding-right:  10%; }
 	.cont-titulo{ width: 80%; margin-left: 10%;margin-right: 10%; padding-left: 0;}
 	.cl-banner-post{ padding: 0; margin: 0;}
+	.cl-banner-home{ padding: 0; margin: 0;}
  	.cta1 h5{ font-size: 1.2em; }
 	.cont-titulo h2{ font-size: 27px; }
 	.tf-email{ font-size: 1.3em; }
@@ -576,7 +587,7 @@ transition: all 0.5s linear;
 	.navbar-nav ul{	float: right;	}
 	.navbar-collapse{ background: transparent; height: 70px !important;padding-top: 30px; margin-left: 5% !important; }
 	.navbar-collapse li a{ color: #fff;}
-	.cl-banner-post{ background-image: url(img/padrao.png);   }
+	.cl-banner-home{ background-image: url(img/padrao.png);   }
 
 }
 
