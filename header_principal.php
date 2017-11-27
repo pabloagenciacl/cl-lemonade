@@ -15,6 +15,9 @@
 
         <!-- CSS -->
         <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style-header-padrao.css">
+
+
 
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -30,11 +33,11 @@
 
         
         
-        <nav class="cl-navbar_principal  navbar-static-top">
-            <div class="container-nav_principal">
+        <nav class="cl-navbar_principal  navbar-static-top bgbranco">
+            <div class="container-nav-principal">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <i class="fa fa-bars fa-lg" style="color: #fff;" aria-hidden="true"></i>
+                        <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
                     </button>
                     <a id="#cl-logo" href="<?php echo site_url(); ?>"><?php logonav() ?></a>
                 </div>

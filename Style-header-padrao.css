@@ -1,0 +1,139 @@
+@import url('lib/bootstrap/3.3.5/css/bootstrap.css');
+
+/*---------RESET------------*/
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+
+
+.cl-navbar_principal{
+	background-color: transparent;
+}
+
+.bgbranco{
+	background: #fff;
+}
+
+.cl-navbar_principal .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+
+.container-nav-principal{
+	padding: 0;
+	margin: 0;
+	z-index: 999 !important;
+	position: relative;
+}
+
+.navbar-header img{
+	margin:0;
+}
+.navbar-header{
+	padding: 3%;
+}
+
+.navbar-collapse {
+	background: #fff;
+	height: 70px !important;
+	align-content: center;
+	text-align: center;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.navbar-collapse a{
+	background: transparent !important;
+	text-decoration:underline;
+}
+
+
+.navbar-collapse a:hover{
+	background: transparent !important;
+	text-decoration:none;
+	transition: all 0.1s linear;
+
+}
+
+.navbar-collapse ul{ 
+	width: 100%;
+	list-style: none; 
+	margin-top: 5px;
+	margin-bottom: 2%;
+}
+
+.navbar-collapse li a{
+	font-size: 18px;
+	text-decoration: none;
+	list-style: none;
+}
+
+
+
+.navbar-collapse li a:hover {
+	color: #FC1;
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+}
+
+
+.cl-container-full {
+	padding-right: 0;
+	padding-left: 0;
+	margin-right: 0;
+	margin-left: 0; 
+}
+
+
+.navbar-toggle{
+	border: none !important;
+	padding: 0 !important;
+	margin: 1% 2%  0 0 !important;
+}
+.menu-main-menu-container{
+	width: 100%;
+}
+
+#nav-posts a{
+	padding: 4px 11px 6px 12px;
+	color: #a5adb8;
+	border: 1px solid #a5adb8;
+	border-radius: 25px;
+}
+
+@media(min-width: 560px){
+	.navbar-collapse li a{ font-size: 25px; }
+}
+
+@media(min-width: 650px){
+	.cl-navbar_principal img,i{ margin: 0;}
+	.navbar-header{ padding: 0; margin: 2% 5% 2% 5%;}
+}
+
+@media(min-width: 750px){
+	.cl-navbar_principal img{ margin: 0; }
+}
+
+@media(min-width: 768px){
+	.navbar-collapse{ width: 60%;   }
+	.navbar-nav{ width: 60%; }
+	.menu-main-menu-container{ width: 60%;  float: right; text-align: right;  }
+	.navbar-collapse ul li{	display: inline; }
+	.navbar-collapse a{ color: #000; }
+}
+@media(min-width: 780px){
+}
+
+@media(min-width: 880){
+
+}
+
+@media(min-width: 992px){
+
+}
+
+@media(min-width: 1100px){
+
+
+}

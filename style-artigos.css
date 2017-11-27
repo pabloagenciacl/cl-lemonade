@@ -1,0 +1,123 @@
+.cont-artigos{
+	width: 100%;
+	padding-top: 30%;
+	padding-bottom: 30%;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.cont-artigos h2, h4{
+	color: #fff;
+}
+
+.cont-artigos h2{
+	font-size: 26px;
+    line-height: 30px;
+    font-weight: 900;
+    margin-bottom: 5%;
+    font-family: 'Raleway', sans-serif;
+}
+.cont-artigos h4{
+	text-transform: uppercase;
+}
+
+.posts{
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 3%;
+	margin-bottom: 0;
+}
+.post{
+	margin-bottom: 5%;
+}
+.post h5{
+	text-transform: uppercase;
+	color: #a1adba;
+	font-weight: bold;
+}
+
+.post h2{
+	font-size: 17.5px;
+	font-weight: bold;
+    line-height: 24px;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    margin: 0 !important;
+
+}
+
+.post h2 a{
+    color: #4C5A65;
+}
+.thumb-artigos{
+	position: relative;
+    max-width: 100%;
+    max-height: 160px;
+    padding: 5% 20%;
+}
+
+.titulocat{
+	width: 100%;
+	background: #F0F2F4;
+}
+
+
+.cl-banner-art{
+	width: 100%;
+	padding-top: 2%;
+    padding-bottom: 2%;
+} 
+
+@media (min-width: 375px) {
+  .thumb-artigos{	max-height: 200px;}
+}
+
+@media (min-width: 414px) {
+	.posts{	width: 80%;	margin-left: 10%; margin-right: 10%;}
+	.cont-artigos{ padding-top: 10%; padding-bottom: 10%; }
+	.cont-artigos h2{ font-size: 30px; }
+	.cont-artigos h4{ font-size: 19px; }
+	.cl-banner-art{ padding: 0; margin: 0;}
+
+}
+
+@media (min-width: 480px) {
+  	.thumb-artigos{	max-height: 200px; margin: 0;}
+	.posts{	width: 70%;	margin-left: 15%; margin-right: 15%;}
+	.cont-artigos{ padding-top: 10%; }
+}
+
+@media (min-width: 650px){
+	.thumb-artigos{	max-height: 210px; margin: 0;}
+	.posts{	width: 50%;	margin-left: 25%; margin-right: 20%;}
+	.cont-artigos { 	padding: 9% 5% 10% 5% !important; margin:0;  text-align: left; }
+}
+
+@media(min-width: 768px){
+	.cpreto{ color: #000;}
+	.container-nav_principal{  padding-left: 5%; padding-right: 5%;  }
+	.itemc{	padding: 1%;}
+	.categorias ul li{	display: inline;}
+}
+
+@media (min-width: 780px){
+	.post h2{	padding-right: 15%;}
+
+}
+
+@media (min-width: 880px){
+	.cont-artigos{ width: 80%; padding-left: 0 !important; padding-top: 5% !important; margin-left: 10%; margin-right:  10%; padding-right: 0 !important; }
+	.container-nav_principal{ padding-left: 10%; padding-right: 10%; }
+}
+
+@media (min-width: 992px){
+	.post{ height: 337px; margin-bottom: 2%; }
+	.post h2{ font-size: 15px; margin-right: 0; padding-right: 0; } 
+	.posts{ width: 80%; margin-left: 10%; padding-left: 5%; padding-right: 5%; margin-right: 0;  }
+	.cont-artigos{ width: 70%; margin-left: 15%; margin-right: 15%; padding-bottom: 10% !important;}
+	.container-nav_principal{ padding-left: 15%; padding-right: 15%; }
+	.bgbanner{ 	background-image: url(img/padrao.png); }
+	.itemc{	padding: 7px;}
+
+}

@@ -1,0 +1,48 @@
+.categorias{
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding-top: 3%;
+	align-content: center;
+}
+.categorias ul{
+	list-style: none;
+	padding-left: 0;
+}
+
+.categorias li{
+	margin-bottom: 2%;
+}
+
+.verde{
+	background: #2D5;
+}
+.vermelho{
+	background: #DD3333;
+}
+.amarelo{
+	background: #EE1;
+}
+.azul{
+	background: #2AD;
+}
+.laranja{
+	background: #FA0;
+}
+.rosa{
+	background: #E4E;
+}
+.itemc{
+	color: #fff;
+	padding: 1% 3% 1% 3%;
+	border-radius: 20px;
+}
+
+@media(min-width: 768px){
+	.itemc{	padding: 1%;}
+	.categorias ul li{	display: inline;}
+}
+
+@media (min-width: 992px){
+	.itemc{	padding: 7px;}
+}

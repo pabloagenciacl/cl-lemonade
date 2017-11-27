@@ -15,7 +15,7 @@
 
         <!-- CSS -->
         <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
-
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style-header-padrao.css">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -30,20 +30,3 @@
 
         
         
-        <nav class="cl-navbar  navbar-static-top transicao">
-            <div class="container-nav">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
-                    </button>
-                    <a id="#cl-logo" href="<?php echo site_url(); ?>"><?php logonav() ?></a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse " >
-                    <ul class="nav navbar-nav">
-                        <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-                    </ul>
-                </div><!--/.navbar-collapse -->
-            </div>
-        </nav>
-
-        <div class="cl-container-full">

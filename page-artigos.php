@@ -1,8 +1,12 @@
-<?php get_header(); ?>
+<?php include "header_principal.php" ?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style-artigos.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style-cta1.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style-categorias.css">
 
 
 
-<section class="cl-banner-post col-md-12 bgazul">
+
+<section class="cl-banner-art col-md-12 bgazul bgbanner">
 	<div class="cont-artigos col-md-12">
 		<h4>Artigos Memoráveis</h4>
 		<h2>Tudo o que você precisa para alcançar o próximo nível</h2>
@@ -33,11 +37,14 @@
 	</div>
 </div>
 
- <div class="categorias col-md-12">
-	<?php 
-	
-
-	get_categorias(); ?>
+ <div class="categorias col-md-12" align="center">
+ 	<ul>
+ 		<li><a href="#"><span class="itemc verde">Mais Leads</span></a></li>
+ 		<li><a href="#"><span class="itemc amarelo">Mais Clientes</span></a></li>
+ 		<li><a href="#"><span class="itemc vermelho">Mais Vendas</span></a></li>
+ 		<li><a href="#"><span class="itemc azul">Mais Trafego</span></a></li>
+ 		<li><a href="#"><span class="itemc rosa">Mais Presença</span></a></li>
+ 	</ul>
 </div> 
 <div class="posts col-md-3">
 	<?php 
@@ -71,4 +78,4 @@
 
 	</article>
 </div>
-<?php get_footer(); ?>
+ <?php get_footer(); ?> 

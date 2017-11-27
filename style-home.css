@@ -1,0 +1,205 @@
+.cont-home{
+	width: 100%;
+	padding-top: 30%;
+	padding-bottom: 30%;
+	box-sizing: border-box;
+	text-align: center;
+}
+.bgazul{
+	background-image: url(img/fundo.jpg);
+	background-size: 100%;
+}
+.cont-home h2, h4{
+	color: #fff;
+}
+
+.cont-home h2{
+	font-size: 26px;
+    line-height: 30px;
+    font-weight: 900;
+    margin-bottom: 5%;
+    font-family: 'Raleway', sans-serif;
+}
+.cont-home h4{
+	text-transform: uppercase;
+}
+
+.posts-h{
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 3%;
+	margin-bottom: 0;
+}
+.post-h{
+	
+	margin-bottom: 5%;
+}
+.post-h h5{
+	text-transform: uppercase;
+	color: #a1adba;
+	font-weight: bold;
+}
+
+.post-h h2{
+	font-size: 17.5px;
+	font-weight: bold;
+    line-height: 24px;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    margin: 0 !important;
+
+}
+
+.post-h h2 a{
+    color: #4C5A65;
+}
+.thumb-home{
+	position: relative;
+    max-width: 100%;
+    max-height: 160px;
+    padding: 5% 20%;
+}
+
+
+.cl-banner-home{
+	width: 100%;
+	padding-top: 2%;
+    padding-bottom: 2%;
+} 
+
+.cl-thumbnail-home {
+	display: none;
+	position: static;
+	z-index: 2;
+}
+
+.opcao{
+	width: 100%;
+	background: #F0F2F4;
+	text-align: center;
+	padding: 2% 5% 10% 5%;
+}
+.opcao h3{
+	color: #3E464F;
+	font-size: 23.8px;
+	font-weight: bold;
+}
+
+.opcao p{
+	color: #3E464F;
+	width: 80%;
+    display: table;
+    margin: auto;
+    font-size: 15.4px;
+    margin-bottom: 8%;
+}
+
+.opcao a{
+    color: #fff;
+    background-color: #46cc6e;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+}
+.btopcao{
+	margin-bottom: 5%;
+}
+
+@media (min-width: 375px) {
+  .thumb-home{	max-height: 200px;}
+}
+
+@media (min-width: 414px) {
+	.posts-h{	width: 80%;	margin-left: 10%; margin-right: 10%;}
+	.cont-home{ padding-top: 10%; padding-bottom: 10%; }
+	.cont-home h2{ font-size: 30px; }
+	.cont-home h4{ font-size: 19px; }
+	.cl-banner-home{ padding: 0; margin: 0;}
+
+}
+
+@media (min-width: 480px) {
+  	.thumb-home{	max-height: 200px; margin: 0;}
+	.posts-h{	width: 70%;	margin-left: 15%; margin-right: 15%;}
+	.cont-home{ padding-top: 10%; }
+}
+
+@media (min-width: 650px){
+	.thumb-home{	max-height: 210px; margin: 0;}
+	.posts-h{	width: 50%;	margin-left: 25%; margin-right: 20%;}
+	.cont-home { 	padding: 9% 5% 10% 5% !important; margin:0;  text-align: left; }
+}
+
+@media(min-width: 768px){
+	.cpreto{ color: #000;}
+}
+
+@media (min-width: 780px){
+	.post-h h2{	padding-right: 15%;}
+
+}
+
+@media (min-width: 880px){
+	.cont-home{ width: 80%; padding-left: 0 !important; padding-top: 5% !important; margin-left: 10%; margin-right:  10%; padding-right: 0 !important; }
+}
+
+@media (min-width: 992px){
+	.post-h{ height: 337px; margin-bottom: 2%; }
+	.post-h h2{ font-size: 15px; margin-right: 0; padding-right: 0; } 
+	.posts-h{ width: 80%; margin-left: 10%; padding-left: 5%; padding-right: 5%; margin-right: 0;  }
+	.cont-home{ width: 70%; margin-left: 15%; margin-right: 15%;  padding-top: 0 !important; }
+	.cl-banner-home{ padding-bottom: 15%; }
+	.cl-thumbnail-home{	display: inline; width: 100%; float: right;	position: absolute;	right: 0;}
+	.txt-home h4{ padding-top: 20%; }
+	.opcao{ padding: 15% 15% 3% 15%; }
+}
+
+
+/*--------------------------opcao---------------------*/
+
+
+
+
+.vdb-divider *{font-family:"Open Sans"; }
+
+.divisor{
+
+}
+
+.vdb-divider.vertical{
+	width:2px;
+	height:230px;
+	display:block;
+	margin:auto;
+	background-color:#b5bfc9;
+}
+
+.vdb-divider.vertical.circle:before{
+	content:" ";
+	padding:15px 12px;
+	text-transform:uppercase;
+	position:absolute;
+	margin-left:-26px;
+	margin-top:44%;
+	color:#acb7c2;
+	border:2px solid #b5bfc9;
+	background-color:#f0f2f4;
+	border-radius:50%;
+}
+
+.vdb-divider.vertical.circle.or:before{
+	content:"OU"
+}
+
+@media only screen and (max-width:767px){
+	.vdb-divider.vertical{margin:-50px auto!important;-webkit-transform:rotate(90deg);transform:rotate(90deg)}
+	.vdb-divider.vertical:before{margin-top:90px!important;-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}
+	.vdb-divider.diamonds:before{background-size:50%}
+}
+@media only screen and (min-width:768px){
+	.vdb-divider.vertical:before{margin-top:90px!important;}
+}

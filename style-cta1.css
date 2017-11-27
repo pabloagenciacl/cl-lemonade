@@ -1,0 +1,108 @@
+.cta1{
+    width: 100%;
+    position: relative;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    -webkit-box-shadow: 0 0 20px rgba(62,70,79,.22);
+    box-shadow: 0 0 20px rgba(62,70,79,.22);
+}
+
+.cta1 h5{
+    color: #8999a8;
+        font-size: 12px;
+    text-transform: uppercase;
+    margin: 15px 0 15px 0;
+}
+
+.cta1 h3{
+    line-height: 22px;
+    color: #545f6c;
+    text-transform: initial;
+    font-size: 18px;
+    margin: 15px 0 15px 0;
+}
+
+.tf-email{
+    width: 100%;
+    background-color: #f0f2f4;    
+    padding: 4%;
+    border: 0.5px solid #C0C0C0!important;
+    border-radius: 5px;
+    font-family: FontAwesome;
+}
+
+.bt-env{
+    width: 100%;
+    color: #fff;
+    background-color: #46cc6e;
+    padding: 4%;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+
+@media(min-width: 414px){
+    .cta1{ padding-left: 3%; padding-right: 3%; }
+    .cta1 h5{ font-size: 1.2em; }
+    .tf-email{ font-size: 1.3em; }
+    .bt-env{ font-size: 1.3em; }    
+
+
+}
+
+@media(min-width: 480px){
+    .cta1 h3 { line-height: 1.2; }
+    .cta1 { float: left; width: 90%; margin-left: 5%; padding-bottom: 2%; margin-top: -10%; margin-bottom: 5%; z-index: 25; background: #fff;}
+    .tf-email{  width: 50%; margin: 0; border-top-right-radius:0; ; border-bottom-right-radius: 0;}
+    .bt-env{  float: right; width: 50%; margin: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; }
+
+}
+
+@media(min-width: 650px){
+      .cta1{ padding-top: 1%; padding-bottom: 2%;}
+      .tf-email{ padding: 2%;}
+      .bt-env{ padding: 2%;}
+
+}
+
+@media(min-width: 745px){
+    .cta1{float: left; padding-top: 2%; padding-bottom: 2%;  }
+
+}
+
+@media(min-width: 880px){
+    .cta1{ width: 80%; margin-left: 10%; padding-left: 5%; padding-right: 5%;}
+
+}
+
+@media(min-width: 992px){
+    .cta1{float: left; width: 70%; margin-left: 15%; margin-top: -8%; margin-bottom: 0;  padding-left: 4%; padding-right:  4%;}
+    .cta1 h3{ font-size: 18px; margin-top: 0; padding-top: 0;}      
+    .ctat h5{ font-size: 12px; margin-bottom: 0; padding-bottom: 0; }   
+    .ctaf{ margin-top: 3%; }
+    .tf-email{ width: 50%; padding: 5%;}
+    .bt-env{ width: 50%; padding: 5%;}
+}
+
+@media(min-width: 1000px){
+    .ctat h5{ margin-bottom: 3%; }
+
+}
+
+@media (min-width: 1100px){
+    .cta1{ width: 80%; margin-left: 10%; }
+    .ctaf{ margin-top: 2%; }
+    .bt-env{ padding: 2%; } 
+    .tf-email{ padding: 2%; }
+
+}
+
+@media (min-width: 1280px){
+    .cta1{ margin-top: -3%; }
+}
